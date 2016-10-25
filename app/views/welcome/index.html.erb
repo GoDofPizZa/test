@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<%= stylesheet_link_tag "index" %>
+<link href="/assets/1-9d8f93672587f474bd62a59dcd5731381e7b2b89a70226165149b4d3b2595e4a.png" rel="shortcut icon" type="image/png">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<meta charset="utf-8">
+	<script>
+		$(document).ready(function(){
+			$("#close").bind("click",function(){
+				$("#fixed").css("display","none");
+				$("#register-block").css("display","none");
+			});
+			$("#sign_up").bind("click",function(){
+				$("#fixed").css("display","block");
+				$("#register-block").hide().fadeIn(500);
+			});
+			$("#up").bind("click",function(){
+				$('html,body').animate({
+					scrollTop:0
+				},1000);
+				
+			});
+			$(window).scroll(function(){
+					if($(window).scrollTop() > 1){
+					}
+				});
+		});
+	</script>
+	<title>TeaTime | Home</title>
+</head>
+<body>
+	<div id="fixed"><img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/close_red.png" id="close">
+		<div id="register-block">
+			<%= form_for :text do |f| %>
+				<div><%= f.email_field:text , placeholder:"Ваш электронный ящик" %></div>
+				<div><%= f.text_field:name , placeholder:"Ваше Имя" %></div>
+				<div><%= f.text_field:surname , placeholder:"Ваш Фамилия" %></div>
+				<div><%= f.password_field:pass , placeholder:"Ваш Пароль" %></div>
+				<div><%= f.password_field:repass , placeholder:"Повторите Ваш пароль" %></div>
+				<div class="special"><span>Укажите Страну:</span><%= select_tag "count", "<option value='1'>Украина</option ><option value='2'>Россия</option><option value='3'>Беларусь</option><option value='4'>Великобритания</option>".html_safe %></div>
+				<div class="pol"><span class="pol-select">Укажите пол:</span><br>
+				<div id="malevsfemale">
+				<span>Мужчина</span>
+				<%=  f.radio_button :autolyse, true  %>
+				<span>Женщина</span> 
+				<%=  f.radio_button :autolyse, false  %>
+				</div>
+				</div>
+				<div><%= f.submit "Готово!" %></div>
+			<% end %>
+		</div>
+	</div>	
+		<div id="header"><header>
+			<div id="block" class="first">TeaTime</div>
+			<a href="#"><div id="block" class="second">Обо мне</div></a>
+			<a href="#"><div id="block" class="second">Правила сайта</div></a>
+			<a href="#"><div id="block" class="second">Я на Github</div></a>
+			<a href="#"><div id="block" class="second">Мой друг</div></a>
+			<a href="#"><div id="block" class="third">Я в ВК</div></a>
+			<a href="#"><div id="block" class="fourth">Я в Facebook</div></a>
+		</header>
+		<div id="header-content"><span class="h1">Отдыхай всесте с нами и</span><br><span>улучшай свои навыки в программировании</span><p id="tip">Всего лишь пройди регистрацию и ознокамься с правилами! <br>И начни сегодня изучать Web-среду разработки и Software</p>
+		<div id="buttons"><button id="sign_up">Зарегестрироваться</button><button id="rules">Авторизоваться</button></div>
+		</div>
+		</div>
+		</div>
+		<div id="content">
+			<center><h1>Добро пожаловать!</h1></center>
+			<center><p>Как вы уже поняли это сайт для программистов,но также будут другие разветления сайта.Я буду рад видеть всех людей на моём сайте.Пока что сайт в Alpha разработке.Но постоянно на этот сайт будут добавляться разные "Фичи".В скорем будущем этот сайт будут абсолютно для всех пользователей Интеренета.Так что в конце могу сказать одно:Ждите скорых обновлений!</p></center>
+		</div>
+		<div id="content2">
+			<center><h1>Как я уже сказал вы сможете:</h1></center>
+				<center><div id="image">
+						<div id="debil"><p>Общаться</p><img src="https://cdn3.iconfinder.com/data/icons/forall/1062/conversation-128.png"></div>
+						<div id="debil"><p>Играть</p><img src="https://cdn3.iconfinder.com/data/icons/forall/110/game-128.png"></div>
+						<div id="debil"><p>Смотреть ролики</p><img src="https://cdn3.iconfinder.com/data/icons/forall/1062/video-128.png"></div>
+						<div id="debil"><p>Делиться</p><img src="https://cdn3.iconfinder.com/data/icons/forall/110/synced-128.png"></div>
+						<div id="debil"><p>Программировать</p><img src="https://cdn3.iconfinder.com/data/icons/forall/1062/window-128.png"></div>
+						<div id="debil"><p>Решать проблемы</p><img src="https://cdn3.iconfinder.com/data/icons/forall/1062/puzzle-128.png"></div>
+						<div id="clear">clear</div>
+				</div></center>	
+			</div>
+</div>
+<div id="content4">
+	<center><h1>Ты можешь помечь мне</h1></center>
+	<center><div id="helps">
+	<div id="help">
+		<h1 class="helpa">Web Money</h1>
+		<p>Да,Да,Да донат.Но всем нужны денежные средства согласитесь.Впервую очередь вы оплачиваете хостинг этого сайта.Но прошу заметить это не обязательно.
+		Но всё-же кому не трудно пришлите сколько не жалко мы поможете сайту и попадётё в список топ спонсоров сайта.Вот один из способов помочь мне.
+		</p>
+	</div>
+	<div id="help">
+		<h1 class="helpa">Qiwi</h1>
+		<p>Да,Да,Да донат.Но всем нужны денежные средства согласитесь.Впервую очередь вы оплачиваете хостинг этого сайта.Но прошу заметить это не обязательно.
+		Но всё-же кому не трудно пришлите сколько не жалко мы поможете сайту и попадётё в список топ спонсоров сайта.Вот один из способов помочь мне.</p>
+	</div>
+	</div></center>
+</div>
+<div id="content3">
+			<center><h1>Также ты можешь помочь сайту</h1></center>
+				<center><div id="all-c">
+				<div class="firstly"><center>
+					<%= image_tag "mac"%>
+				</center></div>
+				<div class="secondly"><center>
+			<p>Помогая другим людям вы будете зарабатывать балы и будете в топе лучших помощников сайта.10 первых юзеров этого топа получают особенные привелегии.вы сможете модерировать комментарии и ответы,но ВНИМАНИЕ!
+			если,юзеры будут жаловаться на вас,что вы не так используете свои привелегии.То права у вас отнимаются.Наша задача сделать альтернативу сайту stackoverflow(эта задача не из лёгких),и также сделать социальную часть.Так что присоединяйся!</p>
+			</center></div>
+			<center><button id="up">Наверх к Регистрации</button></center>
+			<div class='clear'></div>
+			</div></center>
+			</div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+class Four < ApplicationRecord
+end
