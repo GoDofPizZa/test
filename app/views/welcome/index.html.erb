@@ -33,7 +33,7 @@
 </head>
 <body>
 	<div id="fixed"><img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/close_red.png" id="close">
-		<div id="register-block">
+		<center><div id="register-block">
 			<%= form_for :text do |f| %>
 				<div><%= f.email_field:text , placeholder:"Ваш электронный ящик" %></div>
 				<div><%= f.text_field:name , placeholder:"Ваше Имя" %></div>
@@ -51,7 +51,7 @@
 				</div>
 				<div><%= f.submit "Готово!" %></div>
 			<% end %>
-		</div>
+		</div></center>
 	</div>	
 		<div id="header"><header>
 			<div id="block" class="first">TeaTime</div>
