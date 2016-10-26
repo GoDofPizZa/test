@@ -182,7 +182,7 @@
 	border-bottom: 3px solid #1b82d4;
 }
 #fixed img{ width: 30px; height: 30px; cursor: pointer; margin-left:10px; margin-top: 10px; position: absolute; }
-#register-block input[type=submit]{ padding:15px 20px 15px 20px; margin-top: 50px; cursor: pointer; width: 280px; margin-left:10px; font-size: 20px; background-color: #2196f3; border:0px solid #ddd; color:#fff; font-family: 'Noto Sans'; }
+#register-block input[type=submit]{ padding:15px 20px 15px 20px; margin-top:0px; cursor: pointer; width: 280px; margin-left:10px; font-size: 20px; background-color: #2196f3; border:0px solid #ddd; color:#fff; font-family: 'Noto Sans'; }
 #register-block div span{ margin-left: 10px; }
 #register-block .special{ margin-top: 10px; font-size:15px; font-family: 'Noto Sans'; }
 #register-block .special select{ margin-left:5px; background-color: rgba(255,255,255,0); border:0px solid #ddd; font-size: 15px; }
@@ -192,3 +192,4 @@
  #malevsfemale span{ font-size: 20px; }
  .pol-select{ font-size: 20px; }
  #register-block input[type=radio]{  }
+ #errors{ height: 50px; width: 100%;  }
