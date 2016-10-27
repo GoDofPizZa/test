@@ -8,11 +8,8 @@
 	<meta charset="utf-8">
 	<script>
 		$(document).ready(function(){
-			if($(window).width() < 1500){ 
+			if($(window).width() > 1200){ 
 				$('head').prepend('<%=  stylesheet_link_tag "index" %>');
-			}
-			if($(window).width() > 1500){ 
-				$('head').prepend('<%=  stylesheet_link_tag "big" %>');
 			}
 			$("#close").bind("click",function(){
 				$("#fixed").css("display","none");

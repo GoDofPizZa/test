@@ -1,3 +1,4 @@
+@media(max-width:1499px;){
 *{
 			padding: 0;
 			margin:0;
@@ -196,3 +197,206 @@
  .pol-select{ font-size: 20px; }
  #register-block input[type=radio]{  }
  #errors{ height: 50px; width: 100%;  }
+}
+
+@media(min-width: 1500px;){
+	*{
+			padding: 0;
+			margin:0;
+			outline:none;
+		}
+		html{  height: 100%;  }  
+		body{  width: 100%;	 background-color:#fff;	 }
+		#header{  width: 100%; float: left; background-image:url('http://www.ibox-security.co.uk/wp-content/uploads/2013/06/Website-Design-Background-1.jpg'); height:800px; background-size:cover; background-position:center center;
+			  box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+		}
+		header{ width: 100%; float: left;  }
+		#header-content #left-right{ width:100%; }
+		#header-content #left-side{ width:60%; margin-top: 10px;   float: left; text-align: left;}
+		#header-content #right-side{ width:30%;  float: left; }
+		#block{  float: left;  }
+		.first{
+			padding:10px 0px 10px 0px;
+			margin-left: 20px;	
+			font-size:40px;
+			color:#fff;
+			border-top:2px  solid rgba(255,255,255,0);
+			font-family: 'Slabo 27px';	
+		}
+		.second{
+			padding:18px 0px 10px 0px;
+			margin-left: 20px;
+			font-size: 30px;
+			border-top:2px solid rgba(255,255,255,0);
+			color:#fff;
+			font-family:'Noto Sans';
+		}
+		.second,.first,.third,.fourth,#header{
+			-webkit-transition:all.4s ease;
+			-o-transition:all.4s ease;
+			-moz-transition:all.4s ease;
+			-ms-transition:all.4s ease;
+		}
+		.second:hover,.first:hover{
+			border-top:2px solid #fff;
+		}
+		.third{ padding:10px 13px 10px 13px;
+			border-radius: 25px;
+			margin-left: 620px;
+			margin-top: 8px;
+			font-size: 30px;
+			border:2px solid #fff;
+			color:#fff;
+			font-family:'Noto Sans'; }
+
+			.fourth{ 
+			padding:10px 13px 10px 13px;
+			border-radius: 25px;
+			margin-left: 15px;
+			margin-top: 8px;
+			font-size: 30px;
+			background-color: #fff;
+			color:#000;
+			border:2px solid #fff;
+			font-family:'Noto Sans'; }
+			.third:hover{
+				background-color: #fff;
+				color:#000;
+			}
+			.fourth:hover{
+				background-color: rgba(255,255,255,0);
+				color:#fff;
+			}
+			#header a{ color:#fff; }
+			a{ text-decoration: none;  }
+			#header-content{
+				width: 100%;
+				float: left;
+				margin-top:150px;
+			}
+			#header-content span{
+				color:#fff;
+				margin-left: 30px;
+				font-size: 45px;
+				font-family: 'Noto Sans';
+				
+			}
+			#header-content .h1{
+				margin-top: 30px;
+			}
+			#tip{ font-family: 'Noto Sans'; color: #ddd; margin-left: 45px; font-size: 25px; }
+			#buttons{ margin-left: 50px; margin-top: 20px; }
+			#buttons button{ padding: 15px 25px 15px 25px; }
+			#buttons #sign_up{background-color:#2196f3; border-bottom:8px solid #1b82d4; border-radius:3px; border-left:0px; border-top: 0px; border-right: 0px; color:#fff; font-family: 'Noto Sans'; font-size: 25px; }
+			#buttons #rules{ margin-left: 5px; background-color:#4caf50; border-bottom:8px solid #439846; border-radius:3px; border-left:0px; border-top: 0px; border-right: 0px; color:#fff; font-family: 'Noto Sans'; font-size: 25px;}	
+			#buttons #rules,#buttons #sign_up{
+				-webkit-transition:all.4s ease;
+			-o-transition:all.4s ease;
+			-moz-transition:all.4s ease;
+			-ms-transition:all.4s ease;
+			cursor: pointer;
+			}
+			#buttons #rules:hover{
+				background-color:#46a54a; 
+			}
+			#buttons #sign_up:hover{
+				background-color:#1b8fea; 
+			}
+#content{
+	width: 100%;
+	background-color: #fff;
+	
+}
+#content #all-xon{ width: 1400px;  }
+#content #imagedes{ width: 500px; float: left; margin-top: 50px; }
+#content #desc123{ width:900px;  float: left;  font-size: 35px; text-align: left; font-family:'Noto Sans';}
+#content h1{
+	 font-family: 'Noto Sans'; padding: 70px 0px 40px 0px; font-size: 65px;
+}
+
+#content3{
+	float: left;
+	width: 100%;
+	color:#fff;
+	background-color:#009cb9;
+}
+#content3 h1{
+	 font-family: 'Noto Sans'; padding: 40px 0px 40px 0px; font-size: 65px; 
+}
+#content3 p{  padding: 5px; font-size:30px; text-align: left; font-family: 'Noto Sans';  }
+
+#content3 #all-c{ width: 1400px;  }
+#content3 .firstly{   float: left; width: 500px; }
+#content3 .secondly{   float: left; width: 900px;  }
+#content3 .firstly img{ width: 100%; margin-top: 50px; }
+#content2{
+	margin-top: 30px;
+	float: left;
+	padding-bottom:30px;
+	width: 100%;
+	background-color: #f0f0f0;
+}
+#content2 h1{
+	text-align: center; font-family: 'Noto Sans'; padding: 40px 0px 20px 0px;
+	font-size: 65px;
+}
+#content2 p{
+	font-size: 30px;
+	font-family: 'Noto Sans';
+}
+#image{ width: 1300px; padding:30px 0px 30px 0px; }
+#debil{ float: left; width:395px; margin-left:35px; margin-top: 40px;}
+#debil img{ margin-top: 10px; }
+ #clear{ height:1em;  width: 100%; opacity: 0; float: left; font-size: 20px;}
+ #up{
+ 	-webkit-transition:all.6s ease;
+ 	-o-transition:all.6s ease;
+ 	-moz-transition:all.6s ease;
+ 	-ms-transition:all.6s ease;
+ }
+ #up{
+  padding: 15px 35px 15px 35px; background-color:rgba(255,255,255,0); border:1px solid #fff; border-radius: 3px; font-size: 30px; color:#fff; font-family: 'Noto Sans';  cursor: pointer; margin-top: 20px;
+ }
+ .clear{  height: 1em; }
+ #up:hover{
+ 	background-color: #fff;
+ 	color:#009cb9;
+ }
+ #content4{
+ 	width: 100%;
+ 	padding-bottom:30px; 
+ 	background-color: rgba(0,0,0,0.84);
+ 	float: left;
+ }
+ #helps{ width: 900px; padding:30px 0px 30px 0px; }
+#help{ float: left; width:400px; margin-left:35px; margin-top: 40px;}
+#content4 .helpa{ background-color:#009cb9; border-radius:5px 5px 0px 0px; }
+#content4 p{ background-color: rgba(0,0,0,0.4); color:#fff;  text-align: left;}
+#help p{ font-size: 25px; padding: 10px; font-family: 'Noto Sans';  }
+ #content4 h1{ font-size: 55px; font-family: 'Noto Sans'; color:#f0f0f0; padding: 30px 0px 30px 0px;    }
+#fixed{
+	background-color:rgba(0,0,0,0.5); float: left; width: 100%; height: 100%; position: fixed; top:0; display: none;
+}
+#register-block{  width: 300px; text-align: left; height: 500px; background-color: #fff; margin-top:100px; display: none; 
+-webkit-box-shadow: -1px -1px 29px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px -1px 29px 0px rgba(0,0,0,0.75);
+-ms-box-shadow: -1px -1px 29px 0px rgba(0,0,0,0.75);
+-o-box-shadow: -1px -1px 29px 0px rgba(0,0,0,0.75);
+}
+#register-block div input[type=email]:focus,#register-block div input[type=text]:focus,#register-block div input[type=password]:focus{
+	border-bottom: 3px solid #1b82d4;
+}
+#fixed img{ width: 30px; height: 30px; cursor: pointer; margin-left:10px; margin-top: 10px; position: absolute; }
+#register-block input[type=submit]{ padding:15px 20px 15px 20px; margin-top:0px; cursor: pointer; width: 280px; margin-left:10px; font-size: 20px; background-color: #2196f3; border:0px solid #ddd; color:#fff; font-family: 'Noto Sans'; }
+#register-block div span{ margin-left: 10px; }
+#register-block .special{ margin-top: 10px; font-size:15px; font-family: 'Noto Sans'; }
+#register-block .special select{ margin-left:5px; background-color: rgba(255,255,255,0); border:0px solid #ddd; font-size: 15px; }
+#register-block div input[type=email],input[type=text],input[type=password]{ width:260px; padding:10px 10px 10px 10px; font-size: 20px; margin-top: 10px; margin-left:8px;  border-radius:5px 5px 0px 0px; border-bottom: 3px solid #ddd; border-left:1px solid #ddd; border-left:1px solid #ddd; border-right:1px solid #ddd; border-top:1px solid #ddd; -webkit-transition:all.3s ease; -ms-transition:all.3s ease; -moz-transition:all.3s ease; -o-transition:all.3s ease; }
+#register-block .pol{ margin-top: 10px; }
+ #malevsfemale{ margin-top: 5px; }
+ #malevsfemale span{ font-size: 20px; }
+ .pol-select{ font-size: 20px; }
+ #register-block input[type=radio]{  }
+ #errors{ height: 50px; width: 100%;  }
+
+}
