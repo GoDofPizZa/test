@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%= stylesheet_link_tag "index" %>
 <link href="/assets/1-9d8f93672587f474bd62a59dcd5731381e7b2b89a70226165149b4d3b2595e4a.png" rel="shortcut icon" type="image/png">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
@@ -9,6 +8,12 @@
 	<meta charset="utf-8">
 	<script>
 		$(document).ready(function(){
+			if($(window).width() < 1500){ 
+				$('head').prepend('<%=  stylesheet_link_tag "index" %>');
+			}
+			if($(window).width() > 1500){ 
+				$('head').prepend('<%=  stylesheet_link_tag "big" %>');
+			}
 			$("#close").bind("click",function(){
 				$("#fixed").css("display","none");
 				$("#register-block").css("display","none");
@@ -63,8 +68,12 @@
 			<a href="#"><div id="block" class="third">Я в ВК</div></a>
 			<a href="#"><div id="block" class="fourth">Я в Facebook</div></a>
 		</header>
-		<div id="header-content"><span class="h1">Отдыхай всесте с нами и</span><br><span>улучшай свои навыки в программировании</span><p id="tip">Всего лишь пройди регистрацию и ознокамься с правилами! <br>И начни сегодня изучать Web-среду разработки и Software</p>
+		<div id="header-content">
+		<div id="left-right">
+		<div id="left-side"><span class="h1">Отдыхай всесте с нами и</span><br><span>улучшай свои навыки в программировании</span><p id="tip">Всего лишь пройди регистрацию и ознокамься с правилами! <br>И начни сегодня изучать Web-среду разработки и Software</p>
 		<div id="buttons"><button id="sign_up">Зарегестрироваться</button><button id="rules">Авторизоваться</button></div>
+		</div>
+		<center><div id="right-side"><%= image_tag("view") %></div></center>
 		</div>
 		</div>
 		</div>
